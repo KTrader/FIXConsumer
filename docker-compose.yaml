@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  pubsub:
+    image: google/cloud-sdk
+    command: gcloud beta emulators pubsub start
+    ports:
+     - "8085:8085"
